@@ -20,6 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Readex+Pro:wght@400;500;600;700&amp;family=IBM+Plex+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
 @media (max-width: 760px) { .buyer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
+@media (max-width: 760px) { .s3-tools { flex-wrap: wrap !important; } .s3-tools > :first-child { flex: 1 1 100% !important; } }
 @media (max-width: 760px) { .emw-row { grid-template-columns: minmax(0, 1fr) !important; } }
 @media (max-width: 760px) { .reel-row { display: flex !important; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px !important; padding-bottom: 8px; } .reel-row > * { flex: 0 0 58%; scroll-snap-align: start; } }
 body{margin:0;background:#FFFFFF}
@@ -182,10 +183,10 @@ if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});
 <h3 style="font-family: 'Readex Pro', sans-serif; font-weight: 600; font-size: 34px; line-height: 1.1; letter-spacing: -0.02em; margin: 0">Sales tools &amp; buyer support</h3>
 <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #2B2F35">
 <li>Built a team quotation system used by 5+ sales reps: buyers now get a full price breakdown instead of a single final number, with automated pricing that removes calculation mistakes, in English and Arabic.</li>
-<li>Created a "How to Purchase" guide for overseas buyers in English and Arabic</li><li>Escorted visiting buyers through auctions and car markets to inspect and buy</li>
+<li>Created a "How to Purchase" guide for overseas buyers in English and Arabic</li><li>Escorted visiting buyers through auctions and car markets to inspect and buy</li><li>Designed an offer sheet template in Canva that sales managers use to send car offers to buyers</li>
 </ul>
 </div>
-<div style="flex: 1 1 520px; display: flex; gap: 16px; align-items: flex-start">
+<div class="s3-tools" style="flex: 1 1 520px; display: flex; gap: 16px; align-items: flex-start">
 <div style="flex: 1.833 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
 <img src="assets/calculator.png" alt="Deal Calculator: the rep enters car price, VAT type and fees on the left; the buyer's quote for a Santa Fe (total CFR $32,494) appears on the right" style="width: 100%; aspect-ratio: 616 / 336; object-fit: cover; border-radius: 10px; border: 1px solid #D5D7D2; display: block">
 <div style="font-size: 14px; color: #545A63"><strong style="color: #14161A">Quotation system</strong> · rep enters the deal, buyer gets a clean quote</div>
@@ -193,6 +194,10 @@ if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});
 <div style="flex: 0.707 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
 <img src="assets/page2.png" alt="First page of the How to Purchase guide: Work and Purchase Process in Karaba" style="width: 100%; aspect-ratio: 595 / 842; object-fit: cover; border-radius: 10px; border: 1px solid #D5D7D2; display: block">
 <span style="font-size: 14px; color: #545A63"><strong style="color: #14161A">Buyer guide</strong></span>
+</div>
+<div style="flex: 0.8 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<img src="assets/offer.jpg" alt="Offer sheet template made in Canva: Kia Seltos 2025, 23,090 km, $14,900, with car photos and karaba.co.kr" style="width: 100%; aspect-ratio: 1080 / 1350; object-fit: cover; border-radius: 10px; border: 1px solid #D5D7D2; display: block">
+<span style="font-size: 14px; color: #545A63"><strong style="color: #14161A">Offer sheet</strong> · used by sales managers</span>
 </div>
 </div>
 </section>
@@ -530,10 +535,10 @@ if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});
 <h3 style="font-weight: 700; font-size: 32px; line-height: 1.3; letter-spacing: -0.03em; margin: 0">영업 도구 &amp; 바이어 지원</h3>
 <ul style="margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 10px; color: #2B2F35">
 <li>영업 담당자 5명 이상이 사용하는 팀 견적 시스템 개발: 바이어에게 최종 금액 하나가 아닌 전체 가격 내역을 제공하고, 가격 계산 자동화로 계산 오류를 없앴으며, 영어·아랍어로 견적 제공</li>
-<li>해외 바이어용 'How to Purchase' 구매 안내서 제작 (영어·아랍어)</li><li>방한 바이어와 동행하며 경매장·중고차 매매단지에서 차량 점검 및 구매 진행</li>
+<li>해외 바이어용 'How to Purchase' 구매 안내서 제작 (영어·아랍어)</li><li>방한 바이어와 동행하며 경매장·중고차 매매단지에서 차량 점검 및 구매 진행</li><li>Canva로 차량 오퍼 시트 템플릿을 제작해 세일즈 매니저들이 바이어에게 오퍼를 보낼 때 활용</li>
 </ul>
 </div>
-<div style="flex: 1 1 520px; display: flex; gap: 16px; align-items: flex-start">
+<div class="s3-tools" style="flex: 1 1 520px; display: flex; gap: 16px; align-items: flex-start">
 <div style="flex: 1.833 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
 <img src="assets/calculator.png" alt="견적 계산기: 왼쪽에 차량 가격·부가세 유형·수수료 입력, 오른쪽에 싼타페 바이어 견적서(총액 CFR $32,494)" style="width: 100%; aspect-ratio: 616 / 336; object-fit: cover; border-radius: 10px; border: 1px solid #D5D7D2; display: block">
 <div style="font-size: 14px; color: #545A63"><strong style="color: #14161A">견적 시스템</strong> · 거래 정보 입력 → 바이어용 견적서 자동 생성</div>
@@ -541,6 +546,10 @@ if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});
 <div style="flex: 0.707 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
 <img src="assets/page2.png" alt="구매 안내서 첫 페이지: Work and Purchase Process in Karaba" style="width: 100%; aspect-ratio: 595 / 842; object-fit: cover; border-radius: 10px; border: 1px solid #D5D7D2; display: block">
 <span style="font-size: 14px; color: #545A63"><strong style="color: #14161A">구매 안내서</strong></span>
+</div>
+<div style="flex: 0.8 1 0; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<img src="assets/offer.jpg" alt="Canva로 만든 차량 오퍼 시트 템플릿: 기아 셀토스 2025, 23,090km, $14,900, 차량 사진과 karaba.co.kr" style="width: 100%; aspect-ratio: 1080 / 1350; object-fit: cover; border-radius: 10px; border: 1px solid #D5D7D2; display: block">
+<span style="font-size: 14px; color: #545A63"><strong style="color: #14161A">오퍼 시트</strong> · 세일즈 매니저 활용</span>
 </div>
 </div>
 </section>
